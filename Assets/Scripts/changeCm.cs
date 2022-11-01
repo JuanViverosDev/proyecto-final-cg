@@ -10,24 +10,25 @@ public class changeCm : MonoBehaviour
     {
         estado = true;
     }
-
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
-        if(estado){
-            if (Input.GetKey(KeyCode.C))
-            {
-                cam.SetActive(true);
-                main.SetActive(false);
-            }
-            else
+        if (Input.GetKey(KeyCode.C))
+        {
+            if (!estado)
             {
                 cam.SetActive(false);
                 main.SetActive(true);
+                return;
             }
+            cam.SetActive(true);
+            main.SetActive(false);
         }
-        
+        else
+        {
+            cam.SetActive(false);
+            main.SetActive(true);
+        }
 
     }
 }
