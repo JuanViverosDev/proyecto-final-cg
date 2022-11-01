@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4347283873449256434, guid: 45e99415f7c19dc4e92b2e6aa30963d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12
+      value: 11.86
       objectReference: {fileID: 0}
     - target: {fileID: 4347283873449256434, guid: 45e99415f7c19dc4e92b2e6aa30963d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -181,7 +181,7 @@ PrefabInstance:
     - target: {fileID: 7688923789392347016, guid: 45e99415f7c19dc4e92b2e6aa30963d6, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 76837d20b7d3b7d43a7b039f92309eb7, type: 2}
+      objectReference: {fileID: 9100000, guid: 7c9876af2f2ad2b4288b6a139ab326ca, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45e99415f7c19dc4e92b2e6aa30963d6, type: 3}
 --- !u!1001 &460594011
@@ -242,7 +242,7 @@ PrefabInstance:
     - target: {fileID: 5421338117486313690, guid: e373e494e658be5459d465340412ce15, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 5ed4d8daf092f7445a9f8c99d0c85695, type: 2}
+      objectReference: {fileID: 9100000, guid: 7c9876af2f2ad2b4288b6a139ab326ca, type: 2}
     - target: {fileID: 5421338117486313690, guid: e373e494e658be5459d465340412ce15, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -286,6 +286,8 @@ MonoBehaviour:
     m_Bits: 8
   jugador: {fileID: 1627908428}
   velocidad: 3
+  rangoAtaque: 2.5
+  a: {fileID: 0}
 --- !u!136 &472206956
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -337,6 +339,8 @@ MonoBehaviour:
     m_Bits: 8
   jugador: {fileID: 1627908428}
   velocidad: 3
+  rangoAtaque: 2
+  a: {fileID: 0}
 --- !u!136 &518553261
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -596,6 +600,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2329410943934235496, guid: 96e44255d011f5c4a961e18f28e7cb82, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7c9876af2f2ad2b4288b6a139ab326ca, type: 2}
     - target: {fileID: 8553345310010005778, guid: 96e44255d011f5c4a961e18f28e7cb82, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -683,15 +691,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4347283873449256434, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4347283873449256434, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4347283873449256434, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4347283873449256434, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -708,7 +716,7 @@ PrefabInstance:
     - target: {fileID: 7688923789392347016, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: c9a31379116aa60449e84ff536fcc686, type: 2}
+      objectReference: {fileID: 9100000, guid: 7c9876af2f2ad2b4288b6a139ab326ca, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
 --- !u!1 &1627908423 stripped
@@ -820,6 +828,8 @@ MonoBehaviour:
     m_Bits: 8
   jugador: {fileID: 1627908428}
   velocidad: 3
+  rangoAtaque: 2
+  a: {fileID: 0}
 --- !u!136 &1641903627
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -851,19 +861,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36323518f29b8614f89c303d3e30934f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.57
+      value: 6.5499716
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36323518f29b8614f89c303d3e30934f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.63
+      value: 0.6300001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36323518f29b8614f89c303d3e30934f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.44
+      value: -4.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36323518f29b8614f89c303d3e30934f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.025544312
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36323518f29b8614f89c303d3e30934f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -871,7 +881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36323518f29b8614f89c303d3e30934f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.9996737
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36323518f29b8614f89c303d3e30934f, type: 3}
       propertyPath: m_LocalRotation.z
@@ -883,7 +893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36323518f29b8614f89c303d3e30934f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 177.073
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36323518f29b8614f89c303d3e30934f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1158,6 +1168,8 @@ MonoBehaviour:
     m_Bits: 8
   jugador: {fileID: 1627908428}
   velocidad: 3
+  rangoAtaque: 2
+  a: {fileID: 0}
 --- !u!136 &2029052730
 CapsuleCollider:
   m_ObjectHideFlags: 0

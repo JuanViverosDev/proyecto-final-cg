@@ -9,6 +9,10 @@ public class mecEnemigo : MonoBehaviour
     bool estarAlerta;
     public Transform jugador;
     public float velocidad;
+    bool atacar; 
+    public float rangoAtaque;
+    public Animator a;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,10 +35,31 @@ public class mecEnemigo : MonoBehaviour
 
         }
 
+        atacar = Physics.CheckSphere(transform.position,rangoAtaque, 
+        capaJugador);
+
+        if(atacar==true && !atacar){
+            
+             a.SetBool("atacar", false);
+
+        }else{
+            a.SetBool("atacar", true);
+            atacar = true;
+        }
+
+    }
+
+    private void FinalA(){
+        a.SetBool("atacar", false);
+        atacar = false;
     }
 
     private void OnDrawGizmos(){
+        Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position,rangoAlerta);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position,rangoAtaque);
+        
     }
 
 }
