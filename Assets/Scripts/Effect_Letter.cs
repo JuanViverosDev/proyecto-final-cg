@@ -7,7 +7,7 @@ public class Effect_Letter : MonoBehaviour
 { 
     public string frase;
     public Text dialogo;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,7 @@ public class Effect_Letter : MonoBehaviour
         {
             dialogo.text = dialogo.text + caracter;
             yield return new WaitForSeconds(0.06f);
-
         }
+
     }
 }
