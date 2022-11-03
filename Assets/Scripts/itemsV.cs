@@ -5,8 +5,8 @@ using UnityEngine;
 public class itemsV : MonoBehaviour
 {
     public GameObject vistas;
-    public int i;
-    public changeCm e;
+    private int i;
+    public changeCm scriptCam;
     void Start()
     {
         i = 1;
@@ -28,7 +28,7 @@ public class itemsV : MonoBehaviour
         {
             if (!Input.GetKey(KeyCode.C))
             {
-                e.estado = false;
+                scriptCam.estado = false;
                 return;
             }
         }

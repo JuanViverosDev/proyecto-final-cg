@@ -12,20 +12,20 @@ public class putTexture : MonoBehaviour
 
     private void OnValidate()
     {
-        cambiarTex(transform.gameObject);
+        cambiarTex(transform.gameObject, txt);
     }
     void Update()
     {
     }
 
-    public void cambiarTex(GameObject obj)
+    public static void cambiarTex(GameObject obj, Material txt)
     {
         int p = obj.transform.childCount;
         if (p != 0)
         {
             for (int i = 0; i < p; i++)
             {
-                cambiarTex(obj.transform.GetChild(i).gameObject);
+                cambiarTex(obj.transform.GetChild(i).gameObject, txt);
 
             }
         }
