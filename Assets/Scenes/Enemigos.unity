@@ -287,7 +287,7 @@ MonoBehaviour:
   jugador: {fileID: 1627908428}
   velocidad: 3
   rangoAtaque: 2.5
-  a: {fileID: 0}
+  a: {fileID: 472206957}
 --- !u!136 &472206956
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -302,6 +302,11 @@ CapsuleCollider:
   m_Height: 2.5452852
   m_Direction: 1
   m_Center: {x: -0.026071787, y: 0.80714846, z: 0.057223797}
+--- !u!95 &472206957 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5421338117486313690, guid: e373e494e658be5459d465340412ce15, type: 3}
+  m_PrefabInstance: {fileID: 460594011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &518553256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9077082639543174056, guid: 96e44255d011f5c4a961e18f28e7cb82, type: 3}
@@ -340,7 +345,7 @@ MonoBehaviour:
   jugador: {fileID: 1627908428}
   velocidad: 3
   rangoAtaque: 2
-  a: {fileID: 0}
+  a: {fileID: 518553262}
 --- !u!136 &518553261
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -355,6 +360,11 @@ CapsuleCollider:
   m_Height: 2.5452852
   m_Direction: 1
   m_Center: {x: -0.026071787, y: 0.80714846, z: 0.057223797}
+--- !u!95 &518553262 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2329410943934235496, guid: 96e44255d011f5c4a961e18f28e7cb82, type: 3}
+  m_PrefabInstance: {fileID: 1314909630}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,7 +839,7 @@ MonoBehaviour:
   jugador: {fileID: 1627908428}
   velocidad: 3
   rangoAtaque: 2
-  a: {fileID: 0}
+  a: {fileID: 1641903628}
 --- !u!136 &1641903627
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -844,6 +854,11 @@ CapsuleCollider:
   m_Height: 2.5452852
   m_Direction: 1
   m_Center: {x: -0.026071787, y: 0.80714846, z: 0.057223797}
+--- !u!95 &1641903628 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7688923789392347016, guid: 45e99415f7c19dc4e92b2e6aa30963d6, type: 3}
+  m_PrefabInstance: {fileID: 152694262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1930644463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1169,7 +1184,7 @@ MonoBehaviour:
   jugador: {fileID: 1627908428}
   velocidad: 3
   rangoAtaque: 2
-  a: {fileID: 0}
+  a: {fileID: 2029052732}
 --- !u!136 &2029052730
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1198,6 +1213,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   danio: 1
   Personaje: {fileID: 1627908423}
+--- !u!95 &2029052732 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7688923789392347016, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
+  m_PrefabInstance: {fileID: 1532482915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2117353588
 GameObject:
   m_ObjectHideFlags: 0

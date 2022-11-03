@@ -38,21 +38,27 @@ public class mecEnemigo : MonoBehaviour
         atacar = Physics.CheckSphere(transform.position,rangoAtaque, 
         capaJugador);
 
-        if(atacar==true && !atacar){
-            
-             a.SetBool("atacar", false);
+        if(atacar){           
+            a.SetBool("atacar", true);
 
         }else{
-            a.SetBool("atacar", true);
-            atacar = true;
+             a.SetBool("atacar", false);
+        } 
+        
+        if(atacar && Input.GetKeyDown(KeyCode.X)){
+            a.SetBool("damage", true);
+            Debug.Log("funciona");
         }
+        else{
+           
+            a.SetBool("damage", false);
+        }
+    
+
 
     }
 
-    private void FinalA(){
-        a.SetBool("atacar", false);
-        atacar = false;
-    }
+
 
     private void OnDrawGizmos(){
         Gizmos.color = Color.red;
