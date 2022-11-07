@@ -6,28 +6,62 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
+    public float velocidadM = 5.0f;
+    public float velocidadR = 200.0f;
+    private Animator a;
+    public float x, y;
+    public Rigidbody rb;
+    public float fSalto = 8f;
+    public bool saltar;
 
-    [SerializeField] float speed = 0f;
-    [SerializeField] float rotationSpeed = 0f;
-
-    InputController inputController = null;
-
-    // Start is called before the first frame update
-    void awake()
+    void Start()
     {
-        inputController = GetComponent<InputController>();
+        saltar = false;
+        a = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+    void FixedUpdate()
+    {
+        transform.Rotate(0, x * Time.deltaTime * velocidadR, 0);
+        transform.Translate(0, 0, y * Time.deltaTime * velocidadM);
+    }
+
     void Update()
     {
-        
-    }
+        x = Input.GetAxis("Horizontal");
+        y = Input.GetAxis("Vertical");
 
-    void Move()
+        a.SetFloat("velX", x);
+        a.SetFloat("velY", y);
+
+        if (saltar)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                a.SetBool("salto", true);
+                rb.AddForce(new Vector3(0, fSalto, 0), ForceMode.Impulse);
+            }
+            a.SetBool("suelo", true);
+        }
+        else
+        {
+            caer();
+        }
+
+
+        if (Input.GetKeyDown("f"))
+        {
+            a.SetBool("dance", false);
+            a.Play("Dance");
+        }
+        if (x > 0 || x < 0 || y > 0 || y < 0)
+        {
+            a.SetBool("dance", true);
+        }
+    }
+    public void caer()
     {
-        Vector2 input = inputController.MoveInput();
-        transform.position += transform.forward * input.y * speed * Time.deltaTime;
-        transform.Rotate(Vector3.up, input.x * rotationSpeed * Time.deltaTime);
+        a.SetBool("suelo", false);
+        a.SetBool("salto", false);
     }
 }

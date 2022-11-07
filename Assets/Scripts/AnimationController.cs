@@ -25,10 +25,13 @@ public class AnimationController : MonoBehaviour
         bool isWalking = animator.GetBool(isWalkingHash);
         bool isJumping = animator.GetBool(isJumpingHash);
         bool forwardPressed = Input.GetKey("w");
+        bool leftPressed = Input.GetKey("a");
+        bool rightPressed = Input.GetKey("d");
+        bool backPressed = Input.GetKey("s");
         bool runPressed = Input.GetKey("left shift");
         bool jumpPressed = Input.GetKey("space");
 
-        if (forwardPressed && !isWalking)
+        if ((forwardPressed || leftPressed || rightPressed) && !isWalking)
         {
             animator.SetBool(isWalkingHash, true);
         }
