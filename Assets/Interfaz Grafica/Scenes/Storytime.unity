@@ -620,7 +620,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PASS ALL
+  m_Text: saltar
 --- !u!222 &269264797
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1146,7 +1146,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 00728b3072bcdae41b602ebe782e5e01, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -1157,7 +1157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEXT
+  m_Text: siguiente
 --- !u!222 &428583219
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1404,7 +1404,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 00728b3072bcdae41b602ebe782e5e01, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -1415,7 +1415,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEXT
+  m_Text: siguiente
 --- !u!222 &437227871
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1686,7 +1686,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PASS ALL
+  m_Text: saltar
 --- !u!222 &502740459
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1900,7 +1900,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PASS ALL
+  m_Text: saltar
 --- !u!222 &528433533
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2300,10 +2300,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 685657100}
+  m_TargetGraphic: {fileID: 686081895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1636166729}
+        m_TargetAssemblyTypeName: ScenManager, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu_Tierra
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &685657100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,7 +2437,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 686081895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1636166729}
+        m_TargetAssemblyTypeName: ScenManager, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu_Tierra
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &686081895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2604,7 +2628,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 00728b3072bcdae41b602ebe782e5e01, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -2615,7 +2639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEXT
+  m_Text: siguiente
 --- !u!222 &772245528
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2695,7 +2719,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PASS ALL
+  m_Text: saltar
 --- !u!222 &802744521
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2953,7 +2977,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PASS ALL
+  m_Text: saltar
 --- !u!222 &893592321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3122,10 +3146,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 986044682}
+  m_TargetGraphic: {fileID: 686081895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1636166729}
+        m_TargetAssemblyTypeName: ScenManager, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu_Tierra
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &986044682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3235,7 +3271,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PASS ALL
+  m_Text: saltar
 --- !u!222 &988005089
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3582,10 +3618,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1125022657}
+  m_TargetGraphic: {fileID: 686081895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1636166729}
+        m_TargetAssemblyTypeName: ScenManager, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu_Tierra
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1125022657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4000,7 +4048,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PASS ALL
+  m_Text: saltar
 --- !u!222 &1205537842
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4069,7 +4117,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 00728b3072bcdae41b602ebe782e5e01, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -4080,7 +4128,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEXT
+  m_Text: siguiente
 --- !u!222 &1207659061
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4555,10 +4603,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1506713424}
+  m_TargetGraphic: {fileID: 686081895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1636166729}
+        m_TargetAssemblyTypeName: ScenManager, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu_Tierra
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1506713424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5018,6 +5078,7 @@ GameObject:
   - component: {fileID: 1636166726}
   - component: {fileID: 1636166725}
   - component: {fileID: 1636166728}
+  - component: {fileID: 1636166729}
   m_Layer: 5
   m_Name: PanelFondo
   m_TagString: Untagged
@@ -5174,6 +5235,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelM1: {fileID: 1150697734}
   panelM2: {fileID: 1447757943}
+--- !u!114 &1636166729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636166719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b44431a9283fad4d8dad5a7bac23f9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreS: Menu_Tierra
 --- !u!1 &1642218588
 GameObject:
   m_ObjectHideFlags: 0
@@ -5588,7 +5662,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 00728b3072bcdae41b602ebe782e5e01, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -5599,7 +5673,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEXT
+  m_Text: siguiente
 --- !u!222 &1770577984
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5688,10 +5762,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1771035854}
+  m_TargetGraphic: {fileID: 686081895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1636166729}
+        m_TargetAssemblyTypeName: ScenManager, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu_Tierra
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1771035854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5810,10 +5896,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1790496930}
+  m_TargetGraphic: {fileID: 686081895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1636166729}
+        m_TargetAssemblyTypeName: ScenManager, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu_Tierra
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1790496930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5912,7 +6010,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 00728b3072bcdae41b602ebe782e5e01, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -5923,7 +6021,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEXT
+  m_Text: siguiente
 --- !u!222 &1848528267
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6126,7 +6224,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 00728b3072bcdae41b602ebe782e5e01, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -6137,7 +6235,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEXT
+  m_Text: siguiente
 --- !u!222 &1915023336
 CanvasRenderer:
   m_ObjectHideFlags: 0
