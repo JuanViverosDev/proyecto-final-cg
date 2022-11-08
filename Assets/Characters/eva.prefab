@@ -1633,6 +1633,7 @@ GameObject:
   - component: {fileID: 5352904530211846000}
   - component: {fileID: 5603585359848916632}
   - component: {fileID: 5603585359848916635}
+  - component: {fileID: 7216269427604731490}
   m_Layer: 0
   m_Name: eva
   m_TagString: Untagged
@@ -1689,6 +1690,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6db2a7a2033802419d660486a811cb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7216269427604731490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4684454874978151882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e4e44e519541b488a1f7b18bce78c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadM: 5
+  velocidadR: 200
+  x: 0
+  y: 0
+  rb: {fileID: 0}
+  fSalto: 8
+  saltar: 0
 --- !u!1 &4688585145150620542
 GameObject:
   m_ObjectHideFlags: 0
