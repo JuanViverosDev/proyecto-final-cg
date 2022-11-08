@@ -13,6 +13,7 @@ public class CharacterController : MonoBehaviour
     public Rigidbody rb;
     public float fSalto = 8f;
     public bool saltar;
+    public GameObject otherP;
 
     void Start()
     {
@@ -24,6 +25,8 @@ public class CharacterController : MonoBehaviour
     {
         transform.Rotate(0, x * Time.deltaTime * velocidadR, 0);
         transform.Translate(0, 0, y * Time.deltaTime * velocidadM);
+        otherP.transform.rotation = transform.rotation;
+        otherP.transform.position = transform.position;
     }
 
     void Update()
