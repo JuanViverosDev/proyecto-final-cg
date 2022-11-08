@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &40586944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9061518081191934173, guid: 15e1905a724a7f248b9ef8a1342e226c, type: 3}
+  m_PrefabInstance: {fileID: 1691942660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &513081665
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +311,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5352904530211846000, guid: 355feb423d18fe344a91e11c3ec54af7, type: 3}
   m_PrefabInstance: {fileID: 1648694389}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1075077424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4684454874978151882, guid: 355feb423d18fe344a91e11c3ec54af7, type: 3}
+  m_PrefabInstance: {fileID: 1648694389}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1266679946
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1266679947}
   - component: {fileID: 1266679948}
+  - component: {fileID: 1266679949}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -359,6 +370,23 @@ MonoBehaviour:
   rb: {fileID: 0}
   fSalto: 8
   saltar: 0
+--- !u!114 &1266679949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266679946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439287fc9f5d0d84ab14be8d7b5b02e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characters:
+  - {fileID: 40586944}
+  - {fileID: 1075077424}
+  index: 0
+  player: {fileID: 40586944}
 --- !u!1001 &1648694389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -372,7 +400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4684454874978151882, guid: 355feb423d18fe344a91e11c3ec54af7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5352904530211846000, guid: 355feb423d18fe344a91e11c3ec54af7, type: 3}
       propertyPath: m_RootOrder
