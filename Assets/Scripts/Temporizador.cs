@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,13 +15,17 @@ public class Temporizador : MonoBehaviour
     {
         i = 0;
         activo = true;
+
         StartCoroutine(Contador());
 
     }
     private void FixedUpdate()
     {
-        
+
     }
+
+    private void WaitForSeconds(int v) => throw new NotImplementedException();
+
     // Update is called once per frame
     IEnumerator Contador()
     {
