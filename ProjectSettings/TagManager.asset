@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - ImpulsoSalto
+  - Rio_NorteSurPositivo
+  - Rio_OccidOrientePositivo
+  - Rio_NorteSurNegativo
+  - Rio_OccidOrienteNegativo
   layers:
   - Default
   - TransparentFX

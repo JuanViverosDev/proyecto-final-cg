@@ -21,20 +21,18 @@ public class PlatformJump : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Salto en Hongo");
         if (other.tag == "ImpulsoSalto")
         {
-            Debug.Log(other.name);
             rb.AddForce(new Vector3(0,fuerzaSalto,0),ForceMode.Impulse);
         }
     }
 
-        private void OnTriggerExit(Collider other)
+        private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Objeto Salto");
         if (other.tag == "ImpulsoSalto")
         {
-            Debug.Log(other.name);
+            rb.AddForce(new Vector3(0,0,0),ForceMode.Acceleration);
+            rb.AddForce(new Vector3(0,0,0),ForceMode.Impulse);
         }
     }
 
