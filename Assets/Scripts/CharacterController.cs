@@ -51,20 +51,10 @@ public class CharacterController : MonoBehaviour
             caer();
         }
 
-
-        if (Input.GetKeyDown("f"))
-        {
-            a.SetBool("dance", false);
-            a.Play("Dance");
-        }
-        if (x > 0 || x < 0 || y > 0 || y < 0)
-        {
-            a.SetBool("dance", true);
-        }
     }
     public void caer()
     {
-        a.SetBool("suelo", false);
-        a.SetBool("salto", false);
+        // a.SetBool("suelo", false);x
+        // a.SetBool("isJumping", false);
     }
 }
