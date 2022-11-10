@@ -4,8 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Enemigo
   - Jugador
+=======
+  - Pocion
+  - Abismo
+  - CheckP
+  - ColumnsT
+>>>>>>> 910c40b33590aeb4d34bc00caae041ef15c9140f
   layers:
   - Default
   - TransparentFX
