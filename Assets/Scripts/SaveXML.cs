@@ -19,7 +19,7 @@ public class SaveXML : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.H))
         {
             SaveByXML();
         }
@@ -53,9 +53,9 @@ public class SaveXML : MonoBehaviour
         #endregion
 
         xmlDocument.AppendChild(root);
-        xmlDocument.Save(Application.dataPath + "/Data.text");
+        xmlDocument.Save(Application.dataPath + "/Data.xml");
 
-        if (File.Exists(Application.dataPath + "/Data.text"))
+        if (File.Exists(Application.dataPath + "/Data.xml"))
         {
             Debug.Log("XML FILED SAVED");
         }

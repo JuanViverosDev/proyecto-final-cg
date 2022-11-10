@@ -14,7 +14,7 @@ public class CharacterSelection : MonoBehaviour
     void Start()
     {
         player = Instantiate(characters[index], transform.position, Quaternion.identity);
-        // characters[index].SetActive(true);
+        characters[index].SetActive(true);
     }
 
     // Update is called once per frame

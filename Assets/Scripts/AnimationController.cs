@@ -14,12 +14,12 @@ public class AnimationController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
         isJumpingHash = Animator.StringToHash("isJumping");
         isSpecialHash = Animator.StringToHash("isSpecial");
         isAttackHash = Animator.StringToHash("isAttack");
+
     }
 
     // Update is called once per frame
