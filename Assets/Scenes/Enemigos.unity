@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1412972800880484768, guid: 45e99415f7c19dc4e92b2e6aa30963d6, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3972024285425991496, guid: 45e99415f7c19dc4e92b2e6aa30963d6, type: 3}
       propertyPath: m_Name
       value: FireElemental
@@ -705,6 +709,10 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6811422746463594469, guid: e373e494e658be5459d465340412ce15, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e373e494e658be5459d465340412ce15, type: 3}
 --- !u!1 &472206951 stripped
@@ -746,6 +754,11 @@ MonoBehaviour:
   velocidad: 3
   rangoAtaque: 2.5
   a: {fileID: 472206957}
+  vidaEnemigo2: 10
+  barraVidaE2: {fileID: 427827580}
+  damage: 2
+  cont: 0
+  golpe: {fileID: 1627908434}
 --- !u!136 &472206956
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -770,21 +783,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2151694364570770080, guid: e373e494e658be5459d465340412ce15, type: 3}
   m_PrefabInstance: {fileID: 460594011}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &472206959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472206951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fab596fa2f018db43b914985e1b40fd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vidaEnemigo4: 10
-  barraVidaE4: {fileID: 427827580}
-  damage: 2
 --- !u!1 &518553256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9077082639543174056, guid: 96e44255d011f5c4a961e18f28e7cb82, type: 3}
@@ -824,6 +822,11 @@ MonoBehaviour:
   velocidad: 3
   rangoAtaque: 2
   a: {fileID: 518553262}
+  vidaEnemigo2: 10
+  barraVidaE2: {fileID: 2096196072}
+  damage: 2
+  cont: 0
+  golpe: {fileID: 1627908435}
 --- !u!136 &518553261
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -848,21 +851,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8553345310010005778, guid: 96e44255d011f5c4a961e18f28e7cb82, type: 3}
   m_PrefabInstance: {fileID: 1314909630}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &518553264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518553256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f56ffb37aa591c4580ad51290dd63f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vidaEnemigo3: 10
-  barraVidaE3: {fileID: 2096196072}
-  damage: 2
 --- !u!1 &565539051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,6 +1797,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 7c9876af2f2ad2b4288b6a139ab326ca, type: 2}
+    - target: {fileID: 3932893318898282344, guid: 96e44255d011f5c4a961e18f28e7cb82, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8553345310010005778, guid: 96e44255d011f5c4a961e18f28e7cb82, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1851,6 +1843,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8553345310010005778, guid: 96e44255d011f5c4a961e18f28e7cb82, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055134864925333268, guid: 96e44255d011f5c4a961e18f28e7cb82, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9077082639543174056, guid: 96e44255d011f5c4a961e18f28e7cb82, type: 3}
@@ -1903,6 +1899,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2572593098043819360, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736933261965826888, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
+      propertyPath: m_Height
+      value: 2.334802
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736933261965826888, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
+      propertyPath: m_Center.y
+      value: 1.0909876
+      objectReference: {fileID: 0}
     - target: {fileID: 3972024285425991496, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
       propertyPath: m_Name
       value: WaterElemental
@@ -2109,6 +2117,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaJugador: 5
+--- !u!114 &1627908432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627908423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f2a31c5c2d3734fac5fce10f936d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golpe: 0
+  rJugador: {fileID: 1627908426}
+--- !u!114 &1627908433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627908423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f2a31c5c2d3734fac5fce10f936d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golpe: 0
+  rJugador: {fileID: 1627908426}
+--- !u!114 &1627908434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627908423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f2a31c5c2d3734fac5fce10f936d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golpe: 0
+  rJugador: {fileID: 1627908426}
+--- !u!114 &1627908435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627908423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f2a31c5c2d3734fac5fce10f936d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golpe: 0
+  rJugador: {fileID: 1627908426}
 --- !u!1 &1641903622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3972024285425991496, guid: 45e99415f7c19dc4e92b2e6aa30963d6, type: 3}
@@ -2148,6 +2212,11 @@ MonoBehaviour:
   velocidad: 3
   rangoAtaque: 2
   a: {fileID: 1641903628}
+  vidaEnemigo2: 10
+  barraVidaE2: {fileID: 914324489}
+  damage: 2
+  cont: 0
+  golpe: {fileID: 1627908433}
 --- !u!136 &1641903627
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2172,21 +2241,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4347283873449256434, guid: 45e99415f7c19dc4e92b2e6aa30963d6, type: 3}
   m_PrefabInstance: {fileID: 152694262}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1641903630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641903622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 228149d852e340a43b316a30d6cd6a91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vidaEnemigo2: 10
-  barraVidaE2: {fileID: 914324489}
-  damage: 2
 --- !u!1 &1818282733
 GameObject:
   m_ObjectHideFlags: 0
@@ -2978,6 +3032,11 @@ MonoBehaviour:
   velocidad: 3
   rangoAtaque: 2
   a: {fileID: 2029052732}
+  vidaEnemigo2: 10
+  barraVidaE2: {fileID: 319451401}
+  damage: 2
+  cont: 0
+  golpe: {fileID: 1627908432}
 --- !u!136 &2029052730
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3016,21 +3075,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4347283873449256434, guid: 55218cd7c639a474684beb2b85da562c, type: 3}
   m_PrefabInstance: {fileID: 1532482915}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2029052734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029052726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b51f879492a6da4458280d6de0c9ca2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vidaEnemigo1: 10
-  barraVidaE1: {fileID: 319451401}
-  damage: 2
 --- !u!1 &2036707249
 GameObject:
   m_ObjectHideFlags: 0

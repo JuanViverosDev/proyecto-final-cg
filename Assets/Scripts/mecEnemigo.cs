@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class mecEnemigo : MonoBehaviour
 {
@@ -12,14 +13,14 @@ public class mecEnemigo : MonoBehaviour
     bool atacar; 
     public float rangoAtaque;
     public Animator a;
+    public int vidaEnemigo2=10;
+    public Slider barraVidaE2;
+    public int damage=2, cont=0;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    public logicaGolpes golpe;
+    
+
     void Update()
     {
         estarAlerta = Physics.CheckSphere(transform.position,rangoAlerta, 
@@ -40,12 +41,19 @@ public class mecEnemigo : MonoBehaviour
 
         if(atacar){           
             a.SetBool("atacar", true);
+            cont++;
+            if(cont == 55){
+                golpe.golpe=true;
+                cont = 0;
+            }
 
         }else{
              a.SetBool("atacar", false);
+             cont = 0;
+             golpe.golpe=false;
         } 
         
-        if(atacar && Input.GetKeyDown(KeyCode.X)){
+        if(atacar && Input.GetKeyDown(KeyCode.Q)){
             a.SetBool("damage", true);
             Debug.Log("funciona");
         }
@@ -53,12 +61,25 @@ public class mecEnemigo : MonoBehaviour
            
             a.SetBool("damage", false);
         }
+
+
+        barraVidaE2.value = vidaEnemigo2;
+        atacar = Physics.CheckSphere(transform.position,rangoAtaque, 
+        capaJugador);
+        if(Input.GetKeyDown(KeyCode.Q) && atacar)
+        {
+            vidaEnemigo2 -= damage;
+        }
+
+        if(vidaEnemigo2 <= 0){
+            transform.gameObject.SetActive(false);
+        }
+
+        //if(vidaPersonaje <= 0){}
     
 
 
     }
-
-
 
     private void OnDrawGizmos(){
         Gizmos.color = Color.red;
@@ -67,5 +88,11 @@ public class mecEnemigo : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position,rangoAtaque);
         
     }
+
+
+
+
+
+
 
 }
