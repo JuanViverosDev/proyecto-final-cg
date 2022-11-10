@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 197916567}
   - component: {fileID: 197916566}
   m_Layer: 5
-  m_Name: Text (Legacy) (1)
+  m_Name: Reiniciar_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -259,7 +259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.600006, y: -2.5999985}
+  m_AnchoredPosition: {x: -2.5999756, y: -2.5999985}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &197916566
@@ -295,7 +295,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: REINICIAR
+  m_Text: REINICIAR NIVEL
 --- !u!222 &197916567
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -338,12 +338,12 @@ RectTransform:
   - {fileID: 1330318533}
   - {fileID: 744729445}
   m_Father: {fileID: 1740977135}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251.99998, y: -102}
-  m_SizeDelta: {x: 297.913, y: 108.9418}
+  m_AnchoredPosition: {x: -9.2013, y: -260.37003}
+  m_SizeDelta: {x: 572.31, y: 115.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468198896
 MonoBehaviour:
@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 744729447}
   - component: {fileID: 744729446}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Salir_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -604,7 +604,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SALIR
+  m_Text: SALIR JUEGO
 --- !u!222 &744729447
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -647,12 +647,12 @@ RectTransform:
   - {fileID: 197916565}
   - {fileID: 1296417222}
   m_Father: {fileID: 1740977135}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -264, y: -102}
-  m_SizeDelta: {x: 342.5639, y: 108.94}
+  m_AnchoredPosition: {x: -9.2015, y: -49}
+  m_SizeDelta: {x: 572.3055, y: 122.1943}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &751613396
 MonoBehaviour:
@@ -748,7 +748,7 @@ GameObject:
   - component: {fileID: 1296417224}
   - component: {fileID: 1296417223}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Reiniciar_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -807,7 +807,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: REINICIAR
+  m_Text: REINICIAR NIVEL
 --- !u!222 &1296417224
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -828,7 +828,7 @@ GameObject:
   - component: {fileID: 1330318535}
   - component: {fileID: 1330318534}
   m_Layer: 5
-  m_Name: Text (Legacy) (1)
+  m_Name: Salir_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -887,7 +887,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SALIR
+  m_Text: SALIR JUEGO
 --- !u!222 &1330318535
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -908,7 +908,7 @@ GameObject:
   - component: {fileID: 1396609999}
   - component: {fileID: 1396609998}
   m_Layer: 5
-  m_Name: Text (Legacy) (1)
+  m_Name: Continuar_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1078,12 +1078,12 @@ RectTransform:
   - {fileID: 1396609997}
   - {fileID: 1718880143}
   m_Father: {fileID: 1740977135}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.99997854, y: -210.94002}
-  m_SizeDelta: {x: 357.4475, y: 108.94}
+  m_AnchoredPosition: {x: -9.2038, y: -155.37001}
+  m_SizeDelta: {x: 572.31, y: 122.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1540058269
 MonoBehaviour:
@@ -1202,7 +1202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.201479, y: 2.4453812}
+  m_AnchoredPosition: {x: -9.201479, y: 62.075367}
   m_SizeDelta: {x: 1920.7616, y: 883.8702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667489582
@@ -1255,7 +1255,7 @@ GameObject:
   - component: {fileID: 1718880145}
   - component: {fileID: 1718880144}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Continuar_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1355,9 +1355,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1667489581}
-  - {fileID: 468198895}
   - {fileID: 751613395}
   - {fileID: 1540058268}
+  - {fileID: 468198895}
   m_Father: {fileID: 161397369}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
