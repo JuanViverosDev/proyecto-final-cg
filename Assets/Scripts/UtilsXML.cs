@@ -60,4 +60,42 @@ public class SaveXML : MonoBehaviour
             Debug.Log("XML FILED SAVED");
         }
     }
+
+    private void LoadByXML()
+    {
+        string filePath = Application.dataPath + "/Data.xml";
+        if (File.Exists(filePath))
+        {
+            // Save save = new Save(); 
+
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.Load(filePath);
+
+            XmlNodeList bats = xmlDocument.GetElementsByTagName("Bat");
+
+            #region get the SAVE data from the File
+
+            XmlNodeList coinNum = xmlDocument.GetElementsByTagName("CoinNum");
+            int coinNumCount = int.Parse(coinNum[0].InnerText);
+            // save.coinsNum = coinNumCount;
+
+            XmlNodeList diamondNum = xmlDocument.GetElementsByTagName("DiamondNum");
+            int diamondNumCount = int.Parse(diamondNum[0].InnerText);
+            // save.diamondsNum = diamondNumCount;
+
+            XmlNodeList playerPosX = xmlDocument.GetElementsByTagName("PlayerPositionX");
+            float playerPosXNum = float.Parse(playerPosX[0].InnerText);
+            // save.playerPositionX = playerPosXNum;
+
+            XmlNodeList playerPosY = xmlDocument.GetElementsByTagName("PlayerPositionY");
+            float playerPosYNum = float.Parse(playerPosY[0].InnerText);
+            // save.playerPositionY = playerPosYNum;
+        
+            #endregion
+        }
+        else
+        {
+            Debug.Log("NOT FOUNDED");
+        }
+    }
 }
