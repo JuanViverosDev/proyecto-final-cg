@@ -9,6 +9,10 @@ TagManager:
   - Rio_OccidOrientePositivo
   - Rio_NorteSurNegativo
   - Rio_OccidOrienteNegativo
+  - Cielo_NorteSur
+  - Cielo_OccidOriente
+  - Plataforma_Nube
+  - Plataforma_Coral
   layers:
   - Default
   - TransparentFX
