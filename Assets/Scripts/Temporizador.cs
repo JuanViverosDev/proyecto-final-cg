@@ -19,10 +19,7 @@ public class Temporizador : MonoBehaviour
         StartCoroutine(Contador());
 
     }
-    private void FixedUpdate()
-    {
 
-    }
 
     private void WaitForSeconds(int v) => throw new NotImplementedException();
 

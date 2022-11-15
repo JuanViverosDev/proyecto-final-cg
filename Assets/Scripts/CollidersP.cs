@@ -10,7 +10,6 @@ public class CollidersP : MonoBehaviour
     public Text pocion;
     public bool checkP = false;
     public Transform respawn, respawn2;
-    public Material original, trig;
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Pocion"))

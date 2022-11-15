@@ -7,8 +7,9 @@ public class Lgica : MonoBehaviour
     public float velM = 5f, velR = 250f, salto = 8f;
     private Animator anim;
     public Rigidbody rb;
-    public bool canJump;
+    public bool canJump, swich = false;
     public float x, y;
+    public GameObject P1, P2;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +22,37 @@ public class Lgica : MonoBehaviour
         transform.Translate(0, 0, y * Time.deltaTime * velM);
     }
 
+    [System.Obsolete]
     void Update()
     {
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
+        if (swich)
+        {
+            anim.SetBool("Swich", true);
+            swich = false;
+        }
+        else
+        {
+            anim.SetBool("Swich", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (P1.active)
+            {
+                
+                P2.SetActive(true);
+                P1.SetActive(false);
+            }
+            else
+            {
+                P2.SetActive(false);
+                P1.SetActive(true);
+            }
+            swich = true;
+        }
 
 
         if (Input.GetKey(KeyCode.LeftShift))
@@ -39,32 +66,70 @@ public class Lgica : MonoBehaviour
             anim.SetBool("Run", false);
         }
 
-        if (Input.GetKey(KeyCode.B))
+        if (Input.GetKey(KeyCode.Q))
         {
-            anim.SetBool("Dance", true);
+            anim.SetBool("Atack", true);
         }
         else
         {
-            anim.SetBool("Dance", false);
+            anim.SetBool("Atack", false);
         }
-
 
         anim.SetFloat("VelX", x);
         anim.SetFloat("VelY", y);
 
-        if (canJump){
-            if (Input.GetKeyDown(KeyCode.Space))
+        if (anim.GetBool("Eva"))
+        {
+            if (canJump)
             {
-                anim.SetBool("Jump", true);
-                rb.AddForce(new Vector3(0, salto, 0), ForceMode.Impulse);
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    anim.SetBool("Jump", true);
+                    rb.AddForce(new Vector3(0, salto, 0), ForceMode.Impulse);
+                }
+                anim.SetBool("Floor", true);
             }
-            anim.SetBool("Floor", true);
+            else
+            {
+                anim.SetBool("Floor", false);
+                anim.SetBool("Jump", false);
+            }
+
+            if (Input.GetKey(KeyCode.F))
+            {
+
+                anim.SetBool("Crouch", true);
+            }
+            else
+            {
+                anim.SetBool("Crouch", false);
+            }
+
+
         }
         else
         {
-            anim.SetBool("Floor", false);
-            anim.SetBool("Jump", false);
+            if (Input.GetKey(KeyCode.E) && !anim.GetBool("Eva"))
+            {
+                anim.SetBool("Push", true);
+            }
+            else
+            {
+
+                anim.SetBool("Push", false);
+            }
+
+
+            if (canJump)
+            {
+                anim.SetBool("Floor", true);
+            }
+            else
+            {
+                anim.SetBool("Floor", false);
+            }
         }
+
 
     }
 }

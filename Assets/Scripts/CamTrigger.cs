@@ -6,31 +6,51 @@ public class CamTrigger : MonoBehaviour
 {
     public Transform pRef;
     public GameObject pCam;
-    private Transform pBack;
-    private bool estado = true;// Start is called before the first frame update
+    public CapsuleCollider boxCam;
+    private Vector3 pBack;
+    public bool bloquearCam = false, repetir = false;
+    private bool estado = true;
 
-    private void Start()
+    private void Awake()
     {
-        pBack = pCam.transform;
+        pBack = pCam.transform.localPosition;
+    }
+
+    private void Update()
+    {
+        if (bloquearCam && repetir)
+        {
+            pCam.transform.localPosition = new Vector3(pRef.localPosition.x, pCam.transform.localPosition.y, pRef.localPosition.z+0.5f);
+            boxCam.enabled = true;
+            repetir = false;
+        }
+        if (!bloquearCam && repetir)
+        {
+            pCam.transform.localPosition = pBack;
+            boxCam.enabled = false;
+            repetir = false;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (estado && !other.CompareTag("Player"))
+        if (estado && !other.CompareTag("Player") && !bloquearCam)
         {
-            Debug.Log("entro");
-            pCam.transform.position = new Vector3(pRef.position.x, pCam.transform.position.y, pRef.position.z);
+            
+            pCam.transform.localPosition = new Vector3(pRef.localPosition.x, pCam.transform.localPosition.y, pRef.localPosition.z+0.5f);
             estado = false;
+            boxCam.enabled = true;
         }
 
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (estado && !other.CompareTag("Player"))
+        if (!estado && !other.CompareTag("Player") && !bloquearCam)
         {
-            Debug.Log("salio");
-            pCam.transform.position = pBack.position;
+            
+            pCam.transform.localPosition = pBack;
             estado = true;
+            boxCam.enabled = false;
         }
     }
 }
