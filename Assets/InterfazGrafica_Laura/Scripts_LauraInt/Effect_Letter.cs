@@ -19,6 +19,9 @@ public class Effect_Letter : MonoBehaviour
         foreach (char caracter in frase)
         {
             dialogo.text = dialogo.text + caracter;
+
+            FindObjectOfType<AudioManager>().Play("Sonido_Letras");
+
             yield return new WaitForSeconds(0.06f);
         }
 
