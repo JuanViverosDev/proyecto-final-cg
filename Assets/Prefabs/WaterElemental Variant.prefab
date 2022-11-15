@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &890333467583497244
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1125424858, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1125424858, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027166360, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2029052729, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: golpe
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2029052729, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: jugador
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2029052731, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: Personaje
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2843157606378141622, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_Name
+      value: WaterElemental
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188333491900001548, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188333491900001548, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188333491900001548, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188333491900001548, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.326522
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188333491900001548, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188333491900001548, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188333491900001548, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188333491900001548, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188333491900001548, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188333491900001548, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188333491900001548, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b196cded9199bae4eb8902c33abc7bb2, type: 3}

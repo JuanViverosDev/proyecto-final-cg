@@ -4539,6 +4539,10 @@ GameObject:
   - component: {fileID: 7793943792136970574}
   - component: {fileID: 7793943792136970571}
   - component: {fileID: 4028977100208165891}
+  - component: {fileID: 7021621679311002488}
+  - component: {fileID: 4509102859695905284}
+  - component: {fileID: 8087376689030381339}
+  - component: {fileID: 6356302810989748674}
   m_Layer: 0
   m_Name: AllPO
   m_TagString: Untagged
@@ -4678,8 +4682,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pocion: {fileID: 7793943791431738209}
   checkP: 0
+  r: {fileID: 7021621679311002488}
+--- !u!114 &7021621679311002488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983059114932470716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d38db4b4f87884bbf3c47e63f65130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  total: 0
+  parcial: 0
+  checkP: 0
   respawn: {fileID: 0}
   respawn2: {fileID: 0}
+--- !u!114 &4509102859695905284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983059114932470716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992554886e333b844bf8d3c84bca89f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vistas: {fileID: 7793943792551821518}
+  vida: 0
+  r: {fileID: 7021621679311002488}
+--- !u!114 &8087376689030381339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983059114932470716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f2a31c5c2d3734fac5fce10f936d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golpe: 0
+  rJugador: {fileID: 7793943792136970610}
+  v: {fileID: 4509102859695905284}
+--- !u!114 &6356302810989748674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983059114932470716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f2a31c5c2d3734fac5fce10f936d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golpe: 0
+  rJugador: {fileID: 7793943792136970610}
+  v: {fileID: 4509102859695905284}
 --- !u!1 &7030041138477251804
 GameObject:
   m_ObjectHideFlags: 0

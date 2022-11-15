@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class CollidersPAire : MonoBehaviour
 {
     // Start is called before the first frame update
-    private int i = 0;
+    public int i = 0;
     public Text pocion;
     public bool checkP = false;
-    public Transform respawn, respawn2;
+    public Reiniciar r;
     public Material original, trig;
     public void OnTriggerEnter(Collider other)
     {
@@ -21,18 +21,11 @@ public class CollidersPAire : MonoBehaviour
         }
         if (other.CompareTag("Abismo"))
         {
-            if (checkP)
-            {
-                transform.position = respawn2.position;
-            }
-            else
-            {
-                transform.position = respawn.position;
-            }
+            r.parcial = true;
         }
         if (other.CompareTag("CheckP"))
         {
-            checkP = true;
+            r.checkP = true;
         }
 
         Renderer a = other.GetComponent<Renderer>();
