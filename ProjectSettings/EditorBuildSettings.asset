@@ -4,5 +4,62 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/InterfazGrafica_Laura/Scenes_LauraInt/Inicial.unity
+    guid: 6c4a1f506b27fb647ae3dfd256063b47
+  - enabled: 1
+    path: Assets/InterfazGrafica_Laura/Scenes_LauraInt/Final_Victoria.unity
+    guid: cde2bbf13bca82d458409ecf6e0b599d
+  - enabled: 1
+    path: Assets/InterfazGrafica_Laura/Scenes_LauraInt/Menu_Agua.unity
+    guid: a0f5d66fd0bc86b46a629519cc879002
+  - enabled: 1
+    path: Assets/InterfazGrafica_Laura/Scenes_LauraInt/Menu_Fuego.unity
+    guid: 93a88ccc4d8337049a5d0ade17b3398e
+  - enabled: 1
+    path: Assets/InterfazGrafica_Laura/Scenes_LauraInt/Menu_Tierra.unity
+    guid: 4b931aa056943eb439e98cb9b62bf40c
+  - enabled: 1
+    path: Assets/InterfazGrafica_Laura/Scenes_LauraInt/Menu_Viento.unity
+    guid: 8ce9e36b542c59044aaae66b5d4bdc91
+  - enabled: 1
+    path: Assets/InterfazGrafica_Laura/Scenes_LauraInt/Pausa_Reiniciar.unity
+    guid: c882bf3a014dfb44dbfdfbe512afc5dd
+  - enabled: 1
+    path: Assets/InterfazGrafica_Laura/Scenes_LauraInt/Score_Global 1.unity
+    guid: 7787005fc440bbd43948bcfa5bc19ce2
+  - enabled: 1
+    path: Assets/InterfazGrafica_Laura/Scenes_LauraInt/Score_Nivel.unity
+    guid: 08cfb48c53c1f124e993251dd6695474
+  - enabled: 1
+    path: Assets/Scenes/animacion.unity
+    guid: add8fe2171f6c344c8e4468183aa30c6
+  - enabled: 1
+    path: Assets/Scenes/Enemigos.unity
+    guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/Laberinto.unity
+    guid: 5e995d0108191bf499c14c41c785450b
+  - enabled: 1
+    path: Assets/Scenes/LaberintoA.unity
+    guid: fa5b40a25f204774785515eb2c0aeb7a
+  - enabled: 1
+    path: Assets/Scenes/LaberintoE.unity
+    guid: 337b9839b7cf11a4aa6e4145bff7e481
+  - enabled: 1
+    path: Assets/Scenes/LaberintoF.unity
+    guid: 0625a0637e6f40048bb7cacace802305
+  - enabled: 1
+    path: Assets/Scenes/LaberintoW.unity
+    guid: 4989a54262e0c8346854f841edb240ae
+  - enabled: 1
+    path: Assets/Scenes/Personajes.unity
+    guid: df000c2d85fcdca4e95e6bf8cd1a8521
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/InterfazGrafica_Laura/Scenes_LauraInt/Storytime.unity
+    guid: 183c9c0bc56bcba438f9221ebf0f8820
   m_configObjects: {}

@@ -10,6 +10,10 @@ TagManager:
   - ColumnsT
   - Bordes
   - Enemigo
+  - Plataforma_Coral
+  - ImpulsoSalto
+  - Plataforma_Nube
+  - Salida
   layers:
   - Default
   - TransparentFX

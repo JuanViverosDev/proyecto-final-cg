@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5818248666866681952}
   - component: {fileID: 5818248666866681955}
   - component: {fileID: 5818248666866681953}
+  - component: {fileID: 6896300122221504970}
   m_Layer: 0
   m_Name: Nube_OccidenteOeste
   m_TagString: Plataforma_Nube
@@ -113,8 +114,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.036903538, y: 0.050730444, z: 0.021070773}
-  m_Center: {x: 0.007584721, y: -0.00781433, z: -0.0010597631}
+  m_Size: {x: 0.036903538, y: 0.050730444, z: 0.0024283284}
+  m_Center: {x: 0.007584721, y: -0.00781433, z: -0.0006500333}
 --- !u!114 &5818248666866681953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,7 +128,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fe275dc20c35d64d973165db1d9e689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadUp: 0
-  velocidadRight: 0
-  velocidadLeft: 0
-  velocidadDown: 0
+--- !u!65 &6896300122221504970
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6665322533136534376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.018942557, y: 0.025766002, z: 0.006767682}
+  m_Center: {x: 0.007479733, y: -0.007814334, z: 0.010492788}

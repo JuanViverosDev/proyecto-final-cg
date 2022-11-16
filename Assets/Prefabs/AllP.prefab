@@ -1832,10 +1832,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4072594c87f11f14d9e101c86cfaf315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  i: 0
   pocion: {fileID: 3041118338579892081}
   checkP: 0
-  respawn: {fileID: 0}
-  respawn2: {fileID: 0}
+  r: {fileID: 0}
   original: {fileID: 2100000, guid: fc98ed920237c154abb2e9d07a69bb30, type: 2}
   trig: {fileID: 2100000, guid: ee3ebf76730304a4892a44291c529327, type: 2}
 --- !u!114 &3041118337807549787
@@ -3655,7 +3655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3041118339727667227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.259, y: -0.033, z: 0.272}
+  m_LocalPosition: {x: 0.08, y: -0.033, z: 0.27}
   m_LocalScale: {x: 0.23000002, y: 0.23000002, z: 0.23000002}
   m_ConstrainProportionsScale: 1
   m_Children: []

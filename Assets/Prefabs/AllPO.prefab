@@ -2304,7 +2304,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 3707200920584999178}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.6703879
   m_Height: 2.0808861
   m_Direction: 1
@@ -4644,6 +4644,10 @@ MonoBehaviour:
   y: 0
   P1: {fileID: 5681457251438236315}
   P2: {fileID: 4898853247452362509}
+  turn: {x: 0, y: 0}
+  sensitivity: 0.5
+  deltaMove: {x: 0, y: 0, z: 0}
+  speed: 5
 --- !u!114 &7793943792136970571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4680,6 +4684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb93d8d4139561a468e6d5a1607fa367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  i: 0
   pocion: {fileID: 7793943791431738209}
   checkP: 0
   r: {fileID: 7021621679311002488}
