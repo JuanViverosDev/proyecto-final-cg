@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public string audioA;
     public Sonido[] sonidos;
     public static AudioManager instance;
 
@@ -18,8 +19,6 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        DontDestroyOnLoad(gameObject);
-
         foreach (Sonido s in sonidos)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -32,7 +31,7 @@ public class AudioManager : MonoBehaviour
     }
 
     void Start(){
-        Play("Instrumental");
+        Play(audioA);
     }
 
     public void Play(string nombre)

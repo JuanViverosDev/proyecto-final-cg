@@ -8,6 +8,7 @@ public class ganarEnAire : MonoBehaviour
     public GameObject puerta;
 
 
+
     // Update is called once per frame
     void Update()
     {

@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d00b9524ce8cb94caeba5b3a74f9d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioA: Instrumental
   sonidos:
   - nombre: Sonido_Letras
     clip: {fileID: 8300000, guid: 0d24716d1c0aa434fb99e229e4059769, type: 3}
